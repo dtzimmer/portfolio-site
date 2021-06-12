@@ -1,0 +1,28 @@
+.details h2 {
+  font-size: 3.5em;
+  margin-top: 80px;
+}
+.details h3 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container img {
+  border-radius: 10px;
+}
+.htmlcontainer h3 {
+  text-align: center;
+}
+.htmlcontainer p {
+  text-align: center;
+}
+/* .htmlcontainer li {
+  text-align: center;
+} */
+.html {
+  margin-top: 40px;
+}

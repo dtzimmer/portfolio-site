@@ -6,9 +6,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes
-  // const image = getImage(data.projects.nodes.frontma)
-
-  // console.log("IMMMMMAAAGGGEEE", image)
 
   return (
     <Layout>

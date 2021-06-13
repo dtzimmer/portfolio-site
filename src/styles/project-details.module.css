@@ -10,6 +10,7 @@
 .container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .container img {
   border-radius: 10px;
@@ -20,9 +21,6 @@
 .htmlcontainer p {
   text-align: center;
 }
-/* .htmlcontainer li {
-  text-align: center;
-} */
 .html {
   margin-top: 40px;
 }

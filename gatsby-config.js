@@ -25,6 +25,13 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `project-images`,
+        path: `${__dirname}/src/images/projects`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Dan Zimmerman",

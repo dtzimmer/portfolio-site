@@ -2,8 +2,8 @@
 title: Shopping Brain
 stack: React | Node.js | FirebaseDB
 slug: shopping-brain
-thumb: ../images/Shopping.png
-featuredImg: ../images/Shopping.png
+thumb: ../images/projects/Shopping.png
+featuredImg: ../images/projects/Shopping.png
 ---
 
 ### Description

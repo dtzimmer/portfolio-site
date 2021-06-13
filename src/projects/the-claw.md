@@ -1,9 +1,9 @@
 ---
 title: The Claw
-stack: HTML | CSS | JavaScript | React
+stack: JavaScript | React
 slug: the-claw
-thumb: ../images/The-claw.png
-featuredImg: ../images/The-claw.png
+thumb: ../images/projects/The-claw.png
+featuredImg: ../images/projects/The-claw.png
 ---
 
 ### Description

@@ -1,13 +1,21 @@
-.header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-  align-items: center;
+.section {
+  margin-top: 100px;
 }
-.header h2 {
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container p {
+  text-align: center;
+}
+.details h2 {
   font-size: 4em;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
-.header h3 {
+.details h3 {
   font-size: 3em;
   font-weight: 400;
   margin-bottom: 20px;
@@ -17,6 +25,6 @@
   background: #028056;
   padding: 10px 16px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
   font-weight: 500;
 }

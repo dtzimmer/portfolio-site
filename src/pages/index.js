@@ -19,10 +19,10 @@ export default function Home({ data }) {
             My Portfolio Projects
           </Link>
         </div>
-        <GatsbyImage
+        {/* <GatsbyImage
           image={getImage(data.collaboration)}
           alt={data.collaboration.name}
-        />
+        /> */}
       </section>
       <section className={styles.section}>
         <div className={styles.details}>

@@ -4,6 +4,7 @@ stack: React | Node.js | FirebaseDB
 slug: shopping-brain
 thumb: ../images/projects/Shopping.png
 featuredImg: ../images/projects/Shopping.png
+url: https://fun-food-friends-d09e7.firebaseapp.com/
 ---
 
 ### Description

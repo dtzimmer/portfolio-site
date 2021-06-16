@@ -5,9 +5,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as styles from "../styles/project-details.module.css"
 
 export default function ProjectDetails({ data }) {
-  console.log("THIS DATA HERE", data)
   const { html } = data.markdownRemark
-  const { title, stack, featuredImg } = data.markdownRemark.frontmatter
+  const { title, stack, featuredImg, url } = data.markdownRemark.frontmatter
 
   return (
     <Layout>
@@ -16,7 +15,9 @@ export default function ProjectDetails({ data }) {
           <h2>{title}</h2>
           <h3>{stack}</h3>
         </div>
-        <GatsbyImage image={getImage(featuredImg)} alt={title} />
+        <a href={url} target="_blank" rel="noreferrer">
+          <GatsbyImage image={getImage(featuredImg)} alt={title} />
+        </a>
       </div>
       <div className={styles.htmlcontainer}>
         <div
@@ -44,6 +45,7 @@ export const query = graphql`
             )
           }
         }
+        url
       }
     }
   }

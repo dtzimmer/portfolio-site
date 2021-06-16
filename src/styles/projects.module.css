@@ -1,11 +1,11 @@
 .portfolio {
   text-align: center;
 }
-.portfolio > h2 {
+.portfolio h2 {
   font-size: 3em;
   margin-top: 80px;
 }
-.portfolio > h3 {
+.portfolio h3 {
   font-size: 2em;
   font-weight: 400;
 }
@@ -26,4 +26,18 @@
 }
 .projects img {
   border-radius: 10px;
+}
+.projects a {
+  display: inline-block;
+  background: #036d9e;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+  width: 70px;
+}
+.buttoncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }

@@ -14,18 +14,29 @@ export default function Projects({ data }) {
         <h3>Projects and Websites</h3>
         <div className={styles.projects}>
           {projects.map(project => (
-            <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
-              <div>
-                <GatsbyImage
-                  image={getImage(
-                    project.frontmatter.thumb.childImageSharp.gatsbyImageData
-                  )}
-                  alt={project.frontmatter.title}
-                />
-                <h3>{project.frontmatter.title}</h3>
-                <p>{project.frontmatter.stack}</p>
+            <div>
+              <GatsbyImage
+                image={getImage(
+                  project.frontmatter.thumb.childImageSharp.gatsbyImageData
+                )}
+                alt={project.frontmatter.title}
+              />
+              <div className={styles.buttoncontainer}>
+                <Link
+                  to={"/projects/" + project.frontmatter.slug}
+                  key={project.id}
+                >
+                  Details
+                </Link>
+                <a
+                  href={project.frontmatter.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit
+                </a>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>
@@ -51,6 +62,7 @@ export const query = graphql`
               )
             }
           }
+          url
         }
         id
       }

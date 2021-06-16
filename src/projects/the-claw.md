@@ -4,6 +4,7 @@ stack: JavaScript | React
 slug: the-claw
 thumb: ../images/projects/The-claw.png
 featuredImg: ../images/projects/The-claw.png
+url: https://theclaw.netlify.app/
 ---
 
 ### Description

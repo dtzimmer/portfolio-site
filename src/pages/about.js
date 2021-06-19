@@ -9,11 +9,11 @@ export default function About({ data }) {
   const orderedArray = array.sort()
 
   const byu = orderedArray[0]
-  const hawthorn = orderedArray[4]
-  const helio = orderedArray[5]
+  const hawthorn = orderedArray[3]
+  const helio = orderedArray[4]
   const brightbytes = orderedArray[1]
-  const mastercontrol = orderedArray[2]
-  const frazil = orderedArray[3]
+  const mastercontrol = orderedArray[5]
+  const frazil = orderedArray[2]
 
   return (
     <Layout>
@@ -27,6 +27,7 @@ export default function About({ data }) {
           <div className={styles.row}>
             <div className={styles.cardleft}>
               <div>
+                <GatsbyImage image={getImage(byu)} alt={byu.name} />
                 <h4>2014</h4>
                 <p>
                   Graduated from Brigham Young University (Provo) in Elementary
@@ -35,19 +36,16 @@ export default function About({ data }) {
               </div>
             </div>
             <div className={styles.cardright}>
-              <div>
-                <GatsbyImage image={getImage(byu)} alt={byu.name} />
-              </div>
+              <div></div>
             </div>
           </div>
           <div className={styles.row}>
             <div className={styles.cardleft}>
-              <div>
-                <GatsbyImage image={getImage(hawthorn)} alt={hawthorn.name} />
-              </div>
+              <div></div>
             </div>
             <div className={styles.cardright}>
               <div>
+                <GatsbyImage image={getImage(hawthorn)} alt={hawthorn.name} />
                 <h4>2014-2018</h4>
                 <p>Taught 4th and 5th Grade in Texas and Utah</p>
                 <ul>
@@ -70,6 +68,7 @@ export default function About({ data }) {
           <div className={styles.row}>
             <div className={styles.cardleft}>
               <div>
+                <GatsbyImage image={getImage(helio)} alt={helio.name} />
                 <h4>2018</h4>
                 <p>
                   Graduated from Helio Training with a certification in Full
@@ -78,22 +77,19 @@ export default function About({ data }) {
               </div>
             </div>
             <div className={styles.cardright}>
-              <div>
-                <GatsbyImage image={getImage(helio)} alt={helio.name} />
-              </div>
+              <div></div>
             </div>
           </div>
           <div className={styles.row}>
             <div className={styles.cardleft}>
+              <div></div>
+            </div>
+            <div className={styles.cardright}>
               <div>
                 <GatsbyImage
                   image={getImage(brightbytes)}
                   alt={brightbytes.name}
                 />
-              </div>
-            </div>
-            <div className={styles.cardright}>
-              <div>
                 <h4>2018</h4>
                 <p>
                   Jr. Full-Stack Engineer using JavaScript, React, Redux,
@@ -120,6 +116,10 @@ export default function About({ data }) {
           <div className={styles.row}>
             <div className={styles.cardleft}>
               <div>
+                <GatsbyImage
+                  image={getImage(mastercontrol)}
+                  alt={mastercontrol.name}
+                />
                 <h4>2019</h4>
                 <p>
                   Software Quality Engineer I using Selenium (automated
@@ -143,22 +143,16 @@ export default function About({ data }) {
               </div>
             </div>
             <div className={styles.cardright}>
-              <div>
-                <GatsbyImage
-                  image={getImage(mastercontrol)}
-                  alt={mastercontrol.name}
-                />
-              </div>
+              <div></div>
             </div>
           </div>
           <div className={styles.row}>
             <div className={styles.cardleft}>
-              <div>
-                <GatsbyImage image={getImage(frazil)} alt={frazil.name} />
-              </div>
+              <div></div>
             </div>
             <div className={styles.cardright}>
               <div>
+                <GatsbyImage image={getImage(frazil)} alt={frazil.name} />
                 <h4>2020</h4>
                 <p>
                   Quality Assurance Enginner using SQL, WebDriver.io (automated

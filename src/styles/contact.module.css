@@ -1,0 +1,19 @@
+.contact {
+  text-align: center;
+}
+.contact h2 {
+  font-size: 7vw;
+  margin-top: 20px;
+}
+.contact h3 {
+  font-size: 5vw;
+  font-weight: 400;
+}
+.backbutton {
+  display: inline-block;
+  background: #036d9e;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 0px;
+  font-weight: 500;
+}

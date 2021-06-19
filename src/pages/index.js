@@ -14,16 +14,23 @@ export default function Home({ data }) {
           <h2>Quality</h2>
           <h3>Develop & Design</h3>
           <h4>Quality Assurance & Front-end Software Engineer</h4>
-
-          <Link className={styles.btn} to="/projects">
-            My Portfolio Projects
-          </Link>
         </div>
-        {/* <GatsbyImage
-          image={getImage(data.collaboration)}
-          alt={data.collaboration.name}
-        /> */}
       </section>
+      <div>
+        <Link className={styles.btn} to="/projects">
+          My Portfolio Projects
+        </Link>
+      </div>
+      <div>
+        <Link className={styles.btn} to="/about">
+          Work Experience
+        </Link>
+      </div>
+      <div>
+        <Link className={styles.btn} to="/contact">
+          Contact Me
+        </Link>
+      </div>
       <section className={styles.section}>
         <div className={styles.details}>
           <h3>Skills</h3>
@@ -49,16 +56,6 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query Collaboration {
-    collaboration: file(relativePath: { eq: "Collaboration.png" }) {
-      childImageSharp {
-        gatsbyImageData(
-          width: 500
-          placeholder: BLURRED
-          formats: [PNG, AUTO, WEBP]
-        )
-      }
-      name
-    }
     languages: allFile(filter: { relativeDirectory: { eq: "languages" } }) {
       nodes {
         childrenImageSharp {

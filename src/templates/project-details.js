@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as styles from "../styles/project-details.module.css"
@@ -10,6 +10,9 @@ export default function ProjectDetails({ data }) {
 
   return (
     <Layout>
+      <Link className={styles.backbutton} to="/projects">
+        &laquo; Back to Projects
+      </Link>
       <div className={styles.container}>
         <div className={styles.details}>
           <h2>{title}</h2>

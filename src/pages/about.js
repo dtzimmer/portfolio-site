@@ -5,13 +5,15 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as styles from "../styles/about.module.css"
 
 export default function About({ data }) {
-  const byu = data.history.nodes[5]
-  const hawthorn = data.history.nodes[1]
-  const helio = data.history.nodes[2]
-  const brightbytes = data.history.nodes[3]
-  const mastercontrol = data.history.nodes[4]
-  const frazil = data.history.nodes[0]
-  console.log("YOLO", data)
+  const array = data.history.nodes
+  const orderedArray = array.sort()
+
+  const byu = orderedArray[0]
+  const hawthorn = orderedArray[4]
+  const helio = orderedArray[5]
+  const brightbytes = orderedArray[1]
+  const mastercontrol = orderedArray[2]
+  const frazil = orderedArray[3]
 
   return (
     <Layout>
@@ -25,12 +27,10 @@ export default function About({ data }) {
           <div className={styles.row}>
             <div className={styles.cardleft}>
               <div>
-                <h3>2014</h3>
+                <h4>2014</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
+                  Graduated from Brigham Young University (Provo) in Elementary
+                  Education
                 </p>
               </div>
             </div>
@@ -48,25 +48,32 @@ export default function About({ data }) {
             </div>
             <div className={styles.cardright}>
               <div>
-                <h3>2014-2018</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
-                </p>
+                <h4>2014-2018</h4>
+                <p>Taught 4th and 5th Grade in Texas and Utah</p>
+                <ul>
+                  <li>
+                    Integrated effective use of education technology in the
+                    classroom to increase learning outcomes in all areas.
+                  </li>
+                  <li>
+                    Supervised and mentored a student teacher to obtain
+                    necessary knowledge and skills of effective teaching.
+                  </li>
+                  <li>
+                    Collaborated with grade-level teams to plan effective
+                    lessons, assessments, and activities.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div className={styles.row}>
             <div className={styles.cardleft}>
               <div>
-                <h3>2018</h3>
+                <h4>2018</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
+                  Graduated from Helio Training with a certification in Full
+                  Stack Web Development
                 </p>
               </div>
             </div>
@@ -87,26 +94,52 @@ export default function About({ data }) {
             </div>
             <div className={styles.cardright}>
               <div>
-                <h3>2014-2018</h3>
+                <h4>2018</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
+                  Jr. Full-Stack Engineer using JavaScript, React, Redux,
+                  Elixir, Postgres
                 </p>
+                <ul>
+                  <li>
+                    Developed the front-end of the Impact Tool that measured
+                    student performance and growth based on app usage and
+                    academic assessments.
+                  </li>
+                  <li>
+                    Collaborated as a team member in an agile-scrum framework to
+                    deliver and deploy product updates.
+                  </li>
+                  <li>
+                    Created test coverage using Mocha, Cypress, and Applitools
+                    testing libraries and tools.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div className={styles.row}>
             <div className={styles.cardleft}>
               <div>
-                <h3>2018</h3>
+                <h4>2019</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
+                  Software Quality Engineer I using Selenium (automated
+                  testing), Ruby, JavaScript, AngularJS, Java
                 </p>
+                <ul>
+                  <li>
+                    Expanded automated test coverage for the Checklist Tool
+                    which enabled clients to conduct clinical trials by tracking
+                    documentation and assigning tasks.
+                  </li>
+                  <li>
+                    Wrote test plans to ensure quality working software that
+                    validated the new features and functionality.
+                  </li>
+                  <li>
+                    Collaborated with team in an agile software development
+                    system to deliver features in a timely manner.
+                  </li>
+                </ul>
               </div>
             </div>
             <div className={styles.cardright}>
@@ -126,13 +159,27 @@ export default function About({ data }) {
             </div>
             <div className={styles.cardright}>
               <div>
-                <h3>2014-2018</h3>
+                <h4>2020</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
+                  Quality Assurance Enginner using SQL, WebDriver.io (automated
+                  testing), JavaScript
                 </p>
+                <ul>
+                  <li>
+                    Identified, triaged, documented, and tracked defects in Jira
+                    and performed manual regression testing and manual database
+                    testing to ensure that defects have been resolved on the
+                    frontend and backend.
+                  </li>
+                  <li>
+                    Wrote automated testing scripts with WebDriver.io using
+                    JavaScript.
+                  </li>
+                  <li>
+                    Helped to architect database designs and SQL queries to
+                    improve the efficiency of the Fraznet software.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

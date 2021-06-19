@@ -9,7 +9,10 @@
   font-size: 2em;
   font-weight: 400;
 }
-
+.about h4 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
 * {
   box-sizing: border-box;
 }
@@ -40,6 +43,11 @@
   padding-right: 20px;
   left: 0;
 }
+.cardleft li {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 10px;
+}
 .cardleft::after {
   content: "";
   position: absolute;
@@ -59,6 +67,11 @@
   padding-top: 20px;
   padding-left: 20px;
   right: 0;
+}
+.cardright li {
+  font-size: 10px;
+  text-align: left;
+  margin-left: 30px;
 }
 
 .backbutton {

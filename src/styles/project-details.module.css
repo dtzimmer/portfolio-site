@@ -24,3 +24,11 @@
 .html {
   margin-top: 40px;
 }
+.backbutton {
+  display: inline-block;
+  background: #036d9e;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+}

@@ -9,6 +9,9 @@ export default function Projects({ data }) {
 
   return (
     <Layout>
+      <Link className={styles.backbutton} to="/">
+        &laquo; Back to Home
+      </Link>
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>Projects and Websites</h3>

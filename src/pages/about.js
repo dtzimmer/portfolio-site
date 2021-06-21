@@ -5,14 +5,18 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as styles from "../styles/about.module.css"
 
 export default function About({ data }) {
-  const array = data.history.nodes
-  const orderedArray = array.sort()
+  console.log("DATAAA", data)
+  const array = data.workexperience.nodes
+  console.log("ARRAY", array)
 
-  const byu = orderedArray[0]
-  const hawthorn = orderedArray[3]
-  const helio = orderedArray[4]
-  const brightbytes = orderedArray[1]
-  const mastercontrol = orderedArray[5]
+  const _ = require("lodash")
+  let orderedArray = _.orderBy(array, ["name"], ["asc"])
+
+  console.log("ORDERED ARRAY", orderedArray)
+  const byu = orderedArray[1]
+  const helio = orderedArray[3]
+  const brightbytes = orderedArray[0]
+  const mastercontrol = orderedArray[4]
   const frazil = orderedArray[2]
 
   return (
@@ -45,7 +49,6 @@ export default function About({ data }) {
             </div>
             <div className={styles.cardright}>
               <div>
-                <GatsbyImage image={getImage(hawthorn)} alt={hawthorn.name} />
                 <h4>2014-2018</h4>
                 <p>Taught 4th and 5th Grade in Texas and Utah</p>
                 <ul>
@@ -155,7 +158,7 @@ export default function About({ data }) {
                 <GatsbyImage image={getImage(frazil)} alt={frazil.name} />
                 <h4>2020</h4>
                 <p>
-                  Quality Assurance Enginner using SQL, WebDriver.io (automated
+                  Quality Assurance Engineer using SQL, WebDriver.io (automated
                   testing), JavaScript
                 </p>
                 <ul>
@@ -184,8 +187,10 @@ export default function About({ data }) {
 }
 
 export const query = graphql`
-  query History {
-    history: allFile(filter: { relativeDirectory: { eq: "history" } }) {
+  query WorkExperience {
+    workexperience: allFile(
+      filter: { relativeDirectory: { eq: "workexperience" } }
+    ) {
       nodes {
         childImageSharp {
           gatsbyImageData(width: 200, formats: PNG, placeholder: BLURRED)
